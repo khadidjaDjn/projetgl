@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="search">
                 {/* <img src="./search.png" alt="search"></img> */}
                 <IoSearch className='searchIcon'></IoSearch>
-                <input type="text" placeholder="rechercher"></input>    
+                <input type="text" placeholder="search"></input>    
             </div>
             <ul className={active ? 'nav-menu nav-active' : 'nav-menu'}>
                 <li className='nav-item'>
