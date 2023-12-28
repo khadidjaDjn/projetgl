@@ -7,9 +7,9 @@ import { IoSearch } from 'react-icons/io5';
 const LandingPage = () => {
     return (  
         <div className="container">
-            <img src="./homeImg.jpg" className='homeImg'></img>
+            <div className='homeImg' ><img src="./homee.jpg"></img></div>
             <div className='home'>
-                <h1>Experienced lawyers are ready to help.</h1>
+                <h1>Your legal ally for a just tomorrow</h1>
                 <p>Find a lowyer</p>
                 <div className="chercher">
                     <div className='search-bar'>

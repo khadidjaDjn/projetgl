@@ -94,7 +94,7 @@ const Navbar = () => {
                     </ul>
                 </li>
             </ul>
-            <FontAwesomeIcon icon={faBars} className={toggleIcon ? 'menu-icon-active' : 'menu-icon'} onClick={navBar}/>
+            {/* <FontAwesomeIcon icon={faBars} className={toggleIcon ? 'menu-icon-active' : 'menu-icon'} onClick={navBar}/> */}
 
         </nav>
      ); 
