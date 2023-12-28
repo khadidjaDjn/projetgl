@@ -61,6 +61,11 @@
     color: rgba(0, 140, 201, 1);
     cursor: pointer;
 }
+.card .more:hover{
+    color: #00577d;
+    font-weight: 600;
+    transition: .5s ease;
+}
 .allDomains {
     position: absolute;
     width: 100%;
