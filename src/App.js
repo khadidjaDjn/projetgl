@@ -1,6 +1,7 @@
 import './App.css';
 import './index.css'
 
+
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 

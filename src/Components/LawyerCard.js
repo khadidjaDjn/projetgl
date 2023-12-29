@@ -1,7 +1,8 @@
 import './lawyerCard.css'
+import { Link } from 'react-router-dom';
 
 
-import { FaStar, FaStarHalfAlt,FaMapMarkerAlt} from 'react-icons/fa';
+import { FaStar,FaMapMarkerAlt} from 'react-icons/fa';
 
 const LawyerCard = () => {
     return (  
@@ -22,7 +23,7 @@ const LawyerCard = () => {
                     <FaMapMarkerAlt></FaMapMarkerAlt>
                     <p>Mountain View, CA</p>
                 </div> 
-                <a className='more'>read more</a>
+                <a href='#' className='more'>read more</a>
            </div>
            <button className='allDomains' >see more family laywers </button>
        </div>
