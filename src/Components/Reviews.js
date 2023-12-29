@@ -60,6 +60,8 @@ const Reviews = () => {
 
             </div>
             
+            <p className='more'>read more views</p>
+            <button className='write'>write a message</button>
         </div>
      );
 }

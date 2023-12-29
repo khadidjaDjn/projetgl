@@ -11,6 +11,17 @@
     position: relative;
     margin-bottom: 20px;
 }
+
+.reviews h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 12%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
 .reviews .reviews-item {
     width: 100%;
     border: 1.5px solid rgb(237 237 237);
@@ -44,6 +55,30 @@
 .reviews .reviews-item p {
     font-size: 14px;
     font-weight: 500;
+}
+
+
+.reviews .more {
+    text-align: center;
+    color: rgba(74, 153, 211, 1);
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reviews .write {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: rgba(74, 153, 211, 1); 
+    height: 25px;
+    width: 130px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 5px;
+    border-radius: 5px;
 }
 
 

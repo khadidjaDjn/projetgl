@@ -35,7 +35,7 @@ const Profile = () => {
 
 
             <div className='buttons'> 
-               <button className='msg'> <FaPhone></FaPhone> messages</button>
+               <button className='msg'> <FaPhone></FaPhone> message</button>
                <button className='appoinment'>appoinment </button>
             </div>
 
