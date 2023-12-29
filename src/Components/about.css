@@ -8,6 +8,7 @@
     padding: 40px 120px;
     /* box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2); */
     box-shadow: 0px 4px 8px rgba(149, 157, 165, 0.2);
+    align-items: end;
 
 }
 
@@ -53,16 +54,16 @@
 }
 .aboutImg .hammer2{
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     height: 118px;
     width: 145px;
       
 }
 @keyframes hammerAnimation {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(-24px);
     }
     50% {
-        transform: translateY(111px); /* Adjust the vertical distance as needed */
+        transform: translateY(-110px); /* Adjust the vertical distance as needed */
     }
 }

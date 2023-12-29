@@ -1,8 +1,7 @@
 import './lawyerCard.css'
 
 
-import { FaStar ,FaMapMarkerAlt} from 'react-icons/fa';
-import { AiOutlineExclamationCircle } from 'react-icons/ai';
+import { FaStar, FaStarHalfAlt,FaMapMarkerAlt} from 'react-icons/fa';
 
 const LawyerCard = () => {
     return (  
@@ -11,7 +10,7 @@ const LawyerCard = () => {
                 <img src='./avocat1.png'></img>
                 <div className='evaluation'>
                     <FaStar className='star'></FaStar>
-                    <FaStar className='star' ></FaStar>
+                    <FaStar className='star'></FaStar>
                     <FaStar className='star'></FaStar>
                     <FaStar className='star'></FaStar>
                     <FaStar className='star'></FaStar>

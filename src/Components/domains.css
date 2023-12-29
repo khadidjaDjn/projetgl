@@ -1,0 +1,54 @@
+.domains {
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.domains h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.domains .ourDomains {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-template-rows: repeat(2, 1fr);    /* Two rows with equal height */
+    gap: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.domains .ourDomains .domain-item .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.domain-item .title .domain-icon {
+    font-size: 30px;
+    color: rgba(74, 153, 211, 1);;
+}
+.domain-item .title h4{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+.domain-item h4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+.domain-item{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.3;
+}
