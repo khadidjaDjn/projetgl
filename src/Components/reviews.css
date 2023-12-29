@@ -1,0 +1,50 @@
+
+
+.reviews {
+    position: relative;
+    margin-bottom: 50px;
+}
+.reviews h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.reviews .reviews-item {
+    width: 100%;
+    border: 1.5px solid rgb(237 237 237);
+    padding: 12px 20px
+}
+
+
+.reviews .reviews-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+.reviews .reviews-item .rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.reviews .reviews-item .rating  .star {
+    color: rgba(252, 152, 53, 1);
+}
+
+.reviews .reviews-item .rating span {
+    font-size: 13px;
+    margin-left: 20px;
+    font-weight: 400;
+    color: rgb(156 156 156);
+}
+
+.reviews .reviews-item p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+

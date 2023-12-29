@@ -23,7 +23,7 @@ const LawyerCard = () => {
                     <FaMapMarkerAlt></FaMapMarkerAlt>
                     <p>Mountain View, CA</p>
                 </div> 
-                <a href='#' className='more'>read more</a>
+                <a href='/Profile' className='more'>read more</a>
            </div>
            <button className='allDomains' >see more family laywers </button>
        </div>

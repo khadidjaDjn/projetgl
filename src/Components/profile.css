@@ -1,0 +1,234 @@
+.profile {
+    position: relative;
+    margin-top: 50px;
+    height: 1000px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+    /* ------------profileCard ------------ */
+
+.profile .profileCard {
+   
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+.profile .profileCard img {
+    width: 125px;
+    height: 155px;
+    border: 2px solid rgba(74, 153, 211, 1) ;
+}
+.profile .profileCard .infos .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.profile .profileCard .infos .domain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+.profile .profileCard .infos .domain p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.profile .profileCard .infos .domain .brief {
+    color: rgba(74, 153, 211, 1);
+}
+
+.profile .profileCard .infos .domain p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.profile .profileCard .infos .rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.profile .profileCard .infos .rating  .star {
+    color: rgba(252, 152, 53, 1);
+}
+
+.profile .profileCard .infos .nbr {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.profile .profileCard .infos .nbr .phone {
+    color: rgba(74, 153, 211, 1);
+}
+
+.profile .profileCard .infos .nbr p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+/*  ------------buttons ------------ */
+
+.profile .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .buttons .msg {
+    color: white;
+    background-color: rgba(74, 153, 211, 1);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    width: 125px;
+    height: 27px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.profile .buttons .appoinment {
+    color: rgba(74, 153, 211, 1);
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(74, 153, 211, 1);
+    width: 125px;
+    height: 27px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+
+.profile .aboutLawyer {
+    margin-top: 45px;
+    margin-bottom: 30px;
+
+}
+.profile .aboutLawyer h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.profile .aboutLawyer h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 9%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+.profile .aboutLawyer p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+
+/* -------languages------- */
+.profile .languages ,
+.profile .adr , 
+.profile .contact {
+    margin-bottom: 30px;
+}
+.profile .languages h1,
+.profile .adr h1 ,
+.profile .contact h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.profile .languages h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 28%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.profile .languages  .spoken {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile .adr h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.profile .adr .adress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+}
+
+.profile .adr .adress .mapIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.profile .adr .adress p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+                                            /* contact  */
+
+.profile .contact h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+
+
+.profile .contact .phoneNbr,
+.profile .contact .facebook,
+.profile .contact .site{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile .contact  .phoneNbr p,
+.profile .contact .facebook a,
+.profile .contact .site  a{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+.profile .contact  .phoneNbr .phone,
+.profile .contact .facebook .fbIcon,
+.profile .contact .site .siteIcon  {
+    color: rgba(74, 153, 211, 1);
+}
