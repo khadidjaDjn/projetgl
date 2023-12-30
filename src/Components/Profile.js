@@ -1,5 +1,6 @@
 import './profile.css'
 
+import './messageForm.css'
 import './rvForm.css'
 
 import { useState } from 'react';
@@ -35,13 +36,13 @@ const Profile = () => {
     const [rvmodalVisible, setRvModalVisible] = useState(false);
     const handleButtonClick2 = () => {
         setRvModalVisible(!modalVisible);
-        // setRvModalVisible(true);
+        
       };
     
   
       const handleOutsideClick2 = (e) => {
         
-        if (modalVisible && !e.target.closest('.rvForm') && e.target ) {
+        if (rvmodalVisible && !e.target.closest('.rvForm') && e.target ) {
           setRvModalVisible(false);
         }
       };
@@ -91,7 +92,7 @@ const Profile = () => {
             </div>
             <div className='languages'>
                 <h1>spoken languages</h1>
-                <div className='spoken'> <p>english</p> <p>french</p> <p>arabic</p> </div>
+                <div className='spoken'> <p>english</p> <p>french</p> <p>arabic</p> <p>korean</p>  </div>
             </div>
             <div className='adr'>
                 <h1>adress</h1>
@@ -151,7 +152,8 @@ const Profile = () => {
                         </div>
                     
                 </form>
-            </div> )}
+            </div>
+             )}
 
 
             {/* form pour un rendez-vous */}
@@ -164,28 +166,28 @@ const Profile = () => {
                             <div class="grp">
                                 <div class="input-grp">
                                     <FaUser></FaUser>
-                                    <input type="text" id="username" name="username" />
+                                    <input type="text" id="username" name="username"  />
                                     <label for="username">your name</label>
                                 </div>
                              </div>
                             <div class="grp">
                                 <div class="input-grp">
                                     <MdEmail></MdEmail>
-                                    <input type="email" id="email" name="email" />
+                                    <input type="email" id="email" name="email"  />
                                      <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="grp">
                                 <div class="input-grp">
-                                    <MdEmail></MdEmail>
-                                    <input type="text" id="phone" name="phone" />
+                                    <FaPhone></FaPhone>
+                                    <input type="text" id="phone" name="phone"  />
                                      <label for="phone" placeholder='anter your phone number' >phone number</label>
                                 </div>
                             </div>
                             <div class="grp">
                                 <div class="input-grp">
-                                    <input type="text" id="date" name="date" />
-                                     <label for="date" placeholder='choose a date' > Date</label>
+                                    <input type="text" id="date" name="date"  />
+                                     <label for="date" > Date</label>
                                 </div>
                             </div>
 

@@ -62,7 +62,8 @@
     margin-bottom: 20px;
     position: relative;
     border-bottom: 2px solid #c5c3c3;
-    width: 309px;
+    width: 50%;
+    margin-left: 25%;
 }
                                         
 .grp::after, 
