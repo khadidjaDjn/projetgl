@@ -65,6 +65,10 @@
     font-size: 14px;
     font-weight: 500;
 }
+.reviews .more:hover {
+    color: rgb(10, 65, 104);
+    cursor: pointer;
+}
 
 .reviews .write {
     position: absolute;

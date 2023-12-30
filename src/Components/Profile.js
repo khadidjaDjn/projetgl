@@ -1,11 +1,57 @@
 import './profile.css'
 
-import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook, FaGlobe} from 'react-icons/fa';
+import './rvForm.css'
+
+import { useState } from 'react';
+import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook,FaUser, FaGlobe} from 'react-icons/fa';
+import { MdEmail, MdClose } from 'react-icons/md';
+
+
 
 import Reviews from './Reviews';
 
 
 const Profile = () => {
+    const [modalVisible, setModalVisible] = useState(false);
+    const handleButtonClick = () => {
+        console.log('handleButtonClick called');
+        setModalVisible(!modalVisible);
+        // setModalVisible(true);
+      };
+    
+  
+      const handleOutsideClick = (e) => {
+        if (modalVisible && !e.target.closest('.form')  ) {
+    
+          setModalVisible(false);
+        }
+      };
+    
+      const handleCloseModal = () => {
+        setModalVisible(false);
+        
+      };
+//   er form 
+    const [rvmodalVisible, setRvModalVisible] = useState(false);
+    const handleButtonClick2 = () => {
+        setRvModalVisible(!modalVisible);
+        // setRvModalVisible(true);
+      };
+    
+  
+      const handleOutsideClick2 = (e) => {
+        
+        if (modalVisible && !e.target.closest('.rvForm') && e.target ) {
+          setRvModalVisible(false);
+        }
+      };
+    
+      const handleCloseModal2 = () => {
+        setRvModalVisible(false);
+        
+      };
+  
+
     return ( 
         <div className="profile">
             <div className="profileCard" >
@@ -35,8 +81,8 @@ const Profile = () => {
 
 
             <div className='buttons'> 
-               <button className='msg'> <FaPhone></FaPhone> message</button>
-               <button className='appoinment'>appoinment </button>
+               <button className='msg' onClick={handleButtonClick}> <FaPhone></FaPhone> message</button>
+               <button className='appoinment' onClick={handleButtonClick2}>appoinment </button>
             </div>
 
             <div className='aboutLawyer'>
@@ -73,8 +119,91 @@ const Profile = () => {
                 </div>
             </div>
             <Reviews></Reviews>
+
+              {/* form pour envoyer un message  */}
+
+            {modalVisible && (
+            <div id="id01" className='modal' onClick={handleOutsideClick}>
+            
+            <form  className='form'>
+                        <h2 class="text">write a message to <span>kha</span> </h2>
+                        <div class="input-container">
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <FaUser></FaUser>
+                                    <input type="text" id="username" name="username" placeholder="" autocomplete="off"/>
+                                    <label for="username">your name</label>
+                                </div>
+                             </div>
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <MdEmail></MdEmail>
+                                    <input type="email" id="email" name="email" placeholder="" autocomplete="off"/>
+                                     <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <textarea className='yourMsg'> </textarea>
+
+                            <button className='send'> send</button>
+                            <MdClose className='close' onClick={handleCloseModal}></MdClose>
+
+                           
+                        </div>
+                    
+                </form>
+            </div> )}
+
+
+            {/* form pour un rendez-vous */}
+            {rvmodalVisible && (
+            <div id="id02" className='modal2' onClick={handleOutsideClick2} >
+            
+            <form  className='rvForm'>
+                        <h2 class="text">take a date  <span>kha</span> </h2>
+                        <div class="input-container">
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <FaUser></FaUser>
+                                    <input type="text" id="username" name="username" />
+                                    <label for="username">your name</label>
+                                </div>
+                             </div>
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <MdEmail></MdEmail>
+                                    <input type="email" id="email" name="email" />
+                                     <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <MdEmail></MdEmail>
+                                    <input type="text" id="phone" name="phone" />
+                                     <label for="phone" placeholder='anter your phone number' >phone number</label>
+                                </div>
+                            </div>
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <input type="text" id="date" name="date" />
+                                     <label for="date" placeholder='choose a date' > Date</label>
+                                </div>
+                            </div>
+
+
+                            <button className='send'> send</button>
+                            <MdClose className='close' onClick={handleCloseModal2} ></MdClose>
+
+                           
+                        </div>
+                    
+                </form>
+            </div> 
+            )}
+
+            
         </div>
      );
 }
+
  
 export default Profile;
