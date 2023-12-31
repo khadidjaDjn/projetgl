@@ -1,4 +1,4 @@
-import '../Components/navbar.css'
+import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IoSearch } from 'react-icons/io5';
 import { FaRegEnvelope } from 'react-icons/fa';

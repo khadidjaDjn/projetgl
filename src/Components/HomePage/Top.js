@@ -1,5 +1,5 @@
 import './top.css'
-import LawyerCard from './LawyerCard';
+import LawyerCard from '../LawyerCard';
 
 import { useState } from 'react';
 
