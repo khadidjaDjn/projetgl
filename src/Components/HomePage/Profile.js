@@ -1,7 +1,7 @@
 import './profile.css'
 
-import './messageForm.css'
-import './rvForm.css'
+import '../messageForm.css'
+import '../rvForm.css'
 
 import { useState } from 'react';
 import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook,FaUser, FaGlobe} from 'react-icons/fa';
@@ -9,7 +9,7 @@ import { MdEmail, MdClose } from 'react-icons/md';
 
 
 
-import Reviews from './Reviews';
+import Reviews from '../Reviews';
 
 
 const Profile = () => {
