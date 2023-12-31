@@ -60,16 +60,16 @@ const Profile = () => {
                 <div className='infos'> 
                     <h4 className='name'> khadidja djn </h4>
                     <p> Avocat d’affaire a bejaia </p>
-                    <div className='domain'>
-                        <FaBriefcase className='brief'></FaBriefcase>
-                        <p>10 years experience</p>
-                    </div>
                     <div className='rating'>
                         <FaStar className='star'></FaStar>
                         <FaStar className='star'></FaStar>
                         <FaStar className='star'></FaStar>
                         <FaStar className='star'></FaStar>
                         <FaStar className='star'></FaStar>
+                    </div>
+                    <div className='domain'>
+                        <FaBriefcase className='brief'></FaBriefcase>
+                        <p>10 years experience</p>
                     </div>
 
                     <div className='nbr'>
@@ -82,7 +82,7 @@ const Profile = () => {
 
 
             <div className='buttons'> 
-               <button className='msg' onClick={handleButtonClick}> <FaPhone></FaPhone> message</button>
+               <button className='msg' onClick={handleButtonClick}> <FaBriefcase></FaBriefcase> message</button>
                <button className='appoinment' onClick={handleButtonClick2}>appoinment </button>
             </div>
 
@@ -118,8 +118,69 @@ const Profile = () => {
                     <a href='#'>www.kha.com</a>
 
                 </div>
+                </div>
+                <div className='schedule'>
+                <h1>schedule</h1>
+                <div className='week-time'>
+                    <div className='heure'></div>
+                    <div className='days'> saturday </div>
+                    <div className='days'> sunday </div>
+                    <div className='days'> monday </div>
+                    <div className='days'> tuesday </div>
+                    <div className='days'> wednesday </div>
+                    <div className='days'> thirsday</div>
+
+                    <div className='heure'>8am-9am</div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+
+                    <div className='heure'>9am-10am</div>
+                    <div className='event'> hello </div>
+                    <div className='event'> </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+
+                    <div className='heure'>10am-11am</div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+
+                    <div className='heure'>13pm-14pm</div>
+                    <div className='event'>  </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+
+                    <div className='heure'>14pm-15pm</div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+                    <div className='event'> </div>
+
+                    <div className='heure'>15pm-16pm</div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello </div>
+                    <div className='event'>  </div>
+                    <div className='event'> hello </div>
+                    <div className='event'> hello</div>
+                    <div className='event'> hello</div>
+                </div>
             </div>
             <Reviews></Reviews>
+
 
               {/* form pour envoyer un message  */}
 

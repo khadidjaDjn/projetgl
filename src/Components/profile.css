@@ -236,3 +236,61 @@
 
 
 
+
+
+
+
+
+/* WeeklySchedule.css */
+.schedule {
+    margin-bottom: 30px;
+}
+.schedule h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.schedule h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 17%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.week-time {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 2fr); /* 1 column for time, 5 columns for days */
+    grid-template-rows: repeat(7, 1fr); /* 7 rows for each day of the week */
+    border: 1px solid #c2c0c0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .heure,
+  .days,
+  .event {
+    border: 0.2px solid #ebe6e6;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .heure {
+    font-size: 9px;
+    font-weight: 600;
+  }
+  
+  .days {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .event {
+    font-size: 12px;
+    font-weight: 500;
+  }
