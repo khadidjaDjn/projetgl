@@ -1,6 +1,6 @@
 import Navbar from "../HomePage/Navbar";
 import LoginSignup from "./LoginSignup";
-import Footer from "../footer";
+import Footer from "../Footer";
 
 const Auth = () => {
     return ( 

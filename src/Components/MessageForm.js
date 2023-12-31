@@ -25,7 +25,7 @@ const MessageForm = ({ handleButtonClick }) => {
 
     return ( 
         <div e={`messageForm ${modalVisible ? 'visible' : ''}`}>
-             {/* form pour acheter   */}
+             {/* form to send a mesage   */}
              {modalVisible && (
             <div id="id01" className={`modal ${modalVisible ? 'visible' : ''}`} onClick={handleOutsideClick}>
             

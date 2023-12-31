@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './index.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from './Components/footer';
+import Footer from './Components/Footer';
 import Auth from './Components/Auth/auth';
 import LoginSignup from './Components/Auth/LoginSignup';
 
