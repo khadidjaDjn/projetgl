@@ -12,6 +12,8 @@ import HomePage from './Components/HomePage/HomePage'
 import Navbar from './Components/HomePage/Navbar';
 import Home from './Components/HomePage/Home';
 
+
+
 import Profile from './Components/HomePage/Profile';
 
 function App() {
