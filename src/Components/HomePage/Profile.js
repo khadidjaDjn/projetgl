@@ -1,7 +1,7 @@
 import './profile.css'
 
 import '../messageForm.css'
-import '../rvForm.css'
+// import '../rvForm.css'
 
 import { useState } from 'react';
 import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook,FaUser, FaGlobe} from 'react-icons/fa';
@@ -10,7 +10,8 @@ import { MdEmail, MdClose } from 'react-icons/md';
 
 
 import Reviews from '../Reviews';
-
+import Navbar from './Navbar';
+import Footer from '../Footer';
 
 const Profile = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -54,7 +55,10 @@ const Profile = () => {
   
 
     return ( 
-        <div className="profile">
+        
+       <div className='Profile-container '>
+        <Navbar></Navbar>
+         <div className="profile">
             <div className="profileCard" >
                 <img src='./avocat4.png' ></img>  
                 <div className='infos'> 
@@ -204,7 +208,7 @@ const Profile = () => {
                                      <label for="email">Email</label>
                                 </div>
                             </div>
-                            <textarea className='yourMsg'> </textarea>
+                            <textarea className='yourMsg' placeholder='write your message here '> </textarea>
 
                             <button className='send'> send</button>
                             <MdClose className='close' onClick={handleCloseModal}></MdClose>
@@ -263,8 +267,12 @@ const Profile = () => {
             </div> 
             )} */}
 
+
             
         </div>
+        <Footer></Footer>
+       </div>
+
      );
 }
 

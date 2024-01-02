@@ -30,8 +30,11 @@ function App() {
         <Route path="/" exact element={<HomePage/>}>
           <Route path="/Navbar" element={<Navbar/>}/>
           <Route path="/Home" element={<Home/>}/>
-          <Route path="/Profile" element={<Profile/>}/>
+          
         </Route>
+        <Route path="/Profile" element={<Profile/>}/>
+
+
       </Routes>
     </Router>
       

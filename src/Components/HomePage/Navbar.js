@@ -61,7 +61,7 @@ const Navbar = () => {
                     <ul className='dropdown-list'>
                         <li className='dropdown-item'>
                             <a href='#' className='dropdown-link'>
-                                <div className="profile" >
+                                <div className="profileNav" >
                                     <FontAwesomeIcon icon={faCircleUser} />
                                     profile
                                 </div>

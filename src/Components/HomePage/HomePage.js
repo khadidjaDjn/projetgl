@@ -7,7 +7,7 @@ const HomePage = () => {
         <>
            <Navbar/>
            <Home/>
-           <Profile/>
+           
         </>
 
      );

@@ -1,9 +1,40 @@
 import './reviews.css'
-import {FaStar } from 'react-icons/fa';
+import './ReviewForm.css'
+import {FaStar , FaUser} from 'react-icons/fa';
+import { MdEmail, MdClose } from 'react-icons/md';
+import { useState } from 'react';
 
 
 
 const Reviews = () => {
+
+        const [modalVisible2, setModalVisible2] = useState(false);
+    const handleButtonClick2 = () => {
+        setModalVisible2(!modalVisible2);
+        setModalVisible2(true)
+      };
+    
+  
+      const handleOutsideClick2 = (e) => {
+        if (modalVisible2 && !e.target.closest('.form2')  ) {
+    
+          setModalVisible2(false);
+        }
+      };
+    
+      const handleCloseModal2 = () => {
+        setModalVisible2(false);
+        
+      };
+
+
+//       rating 
+const [rating, setRating] = useState(null);
+const [hover ,setHover] = useState(null)
+
+
+
+
     return ( 
         <div className="reviews">
             <h1>reviews</h1>
@@ -63,7 +94,45 @@ const Reviews = () => {
                 </div>
             
             <a className='more'>read more views</a>
-            <button className='write'>write a message</button>
+
+            <button className='write' onClick={handleButtonClick2}>add a review</button>
+
+            {modalVisible2 && (
+            <div id="id02" className='modal2' onClick={handleOutsideClick2}>
+            
+            <form  className='form2'>
+                        <h2 class="text">add review to <span>kha</span> </h2>
+                        <div className='ratingForm'>
+                                 
+                         {[...Array(5)].map((star, index) => {
+                                   const currentRating = index + 1;
+                                         return (
+                                               <label>
+                                               <input type='radio' name='rating' value={currentRating} onClick={()=> setRating(currentRating)} ></input>
+                                                  <FaStar className='star' color= {currentRating <= (hover || rating) ? '#ffc107' : '#e4e5e9' }
+                                                             onMouseEnter={()=> setHover(currentRating)}
+                                                           onMouseLeave={()=> setHover(null)}  
+                                                   ></FaStar>
+                        
+                                                </label>
+                                                )
+                        })}
+                        <p>{rating} /5</p>
+                                
+                         </div>
+                        <textarea className='yourMsg' placeholder='write your message here '> </textarea>
+                        <div className='reviewButtons'>
+                                <button className='send'> send</button> 
+                                <button className='send'> send</button>
+                        </div>
+                        <MdClose className='close' onClick={handleCloseModal2}></MdClose>
+
+                           
+                
+                    
+                </form>
+            </div>
+             )}
         </div>
      );
 }

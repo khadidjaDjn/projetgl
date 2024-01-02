@@ -1,6 +1,12 @@
+
+.Profile-container {
+    position: relative;
+    margin: 0;
+}
+
 .profile {
     position: relative;
-    margin-top: 50px;
+    padding-top: 90px;
     
     width: 80%;
     margin-left: 10%;
@@ -220,6 +226,12 @@
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.profile .contact .facebook,
+.profile .contact .site{
+    text-decoration: underline;
+}
+
+
 .profile .contact  .phoneNbr p,
 .profile .contact .facebook a,
 .profile .contact .site  a{
