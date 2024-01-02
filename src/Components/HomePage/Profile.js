@@ -33,24 +33,24 @@ const Profile = () => {
         
       };
 //   er form 
-    const [rvmodalVisible, setRvModalVisible] = useState(false);
-    const handleButtonClick2 = () => {
-        setRvModalVisible(!modalVisible);
+    // const [rvmodalVisible, setRvModalVisible] = useState(false);
+    // const handleButtonClick2 = () => {
+    //     setRvModalVisible(!modalVisible);
         
-      };
+    //   };
     
   
-      const handleOutsideClick2 = (e) => {
+    //   const handleOutsideClick2 = (e) => {
         
-        if (rvmodalVisible && !e.target.closest('.rvForm') && e.target ) {
-          setRvModalVisible(false);
-        }
-      };
+    //     if (rvmodalVisible && !e.target.closest('.rvForm') && e.target ) {
+    //       setRvModalVisible(false);
+    //     }
+    //   };
     
-      const handleCloseModal2 = () => {
-        setRvModalVisible(false);
+    //   const handleCloseModal2 = () => {
+    //     setRvModalVisible(false);
         
-      };
+    //   };
   
 
     return ( 
@@ -83,7 +83,7 @@ const Profile = () => {
 
             <div className='buttons'> 
                <button className='msg' onClick={handleButtonClick}> <FaBriefcase></FaBriefcase> message</button>
-               <button className='appoinment' onClick={handleButtonClick2}>appoinment </button>
+               <button className='appoinment' >appoinment </button>
             </div>
 
             <div className='aboutLawyer'>
@@ -218,7 +218,7 @@ const Profile = () => {
 
 
             {/* form pour un rendez-vous */}
-            {rvmodalVisible && (
+            {/* {rvmodalVisible && (
             <div id="id02" className='modal2' onClick={handleOutsideClick2} >
             
             <form  className='rvForm'>
@@ -261,7 +261,7 @@ const Profile = () => {
                     
                 </form>
             </div> 
-            )}
+            )} */}
 
             
         </div>

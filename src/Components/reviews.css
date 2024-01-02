@@ -21,6 +21,11 @@
     height: 2px;
     background-color: rgba(74, 153, 211, 1);
 }
+.reviews .reviews-container {
+    height: 571px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
 
 .reviews .reviews-item {
     width: 100%;
@@ -64,10 +69,15 @@
     margin-top: 10px;
     font-size: 14px;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 .reviews .more:hover {
     color: rgb(10, 65, 104);
     cursor: pointer;
+}
+.more:focus + .reviews-container {
+    height: auto;
+    overflow: visible;
 }
 
 .reviews .write {
