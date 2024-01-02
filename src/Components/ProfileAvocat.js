@@ -1,58 +1,19 @@
-import './profile.css'
 
-import '../messageForm.css'
-// import '../rvForm.css'
+import './profileAvocat.css'
 
-import { useState } from 'react';
+
+// import { useState } from 'react';
 import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook,FaUser, FaGlobe , FaBalanceScale,FaBuilding, FaChartBar, FaCannabis, FaGavel} from 'react-icons/fa';
-import { MdEmail, MdClose } from 'react-icons/md';
+// import { MdEmail, MdClose } from 'react-icons/md';
+
+import Navbar from './HomePage/Navbar';
+import Footer from './Footer';
 
 
-
-import Reviews from '../Reviews';
-import Navbar from './Navbar';
-import Footer from '../Footer';
-
-const Profile = () => {
-    const [modalVisible, setModalVisible] = useState(false);
-    const handleButtonClick = () => {
-        console.log('handleButtonClick called');
-        setModalVisible(!modalVisible);
-        // setModalVisible(true);
-      };
-    
+const ProfileAvocat = () => {
+   
   
-      const handleOutsideClick = (e) => {
-        if (modalVisible && !e.target.closest('.form')  ) {
-    
-          setModalVisible(false);
-        }
-      };
-    
-      const handleCloseModal = () => {
-        setModalVisible(false);
-        
-      };
-//   er form 
-    // const [rvmodalVisible, setRvModalVisible] = useState(false);
-    // const handleButtonClick2 = () => {
-    //     setRvModalVisible(!modalVisible);
-        
-    //   };
-    
-  
-    //   const handleOutsideClick2 = (e) => {
-        
-    //     if (rvmodalVisible && !e.target.closest('.rvForm') && e.target ) {
-    //       setRvModalVisible(false);
-    //     }
-    //   };
-    
-    //   const handleCloseModal2 = () => {
-    //     setRvModalVisible(false);
-        
-    //   };
-  
+     
 
     return ( 
         
@@ -86,8 +47,9 @@ const Profile = () => {
 
 
             <div className='buttons'> 
-               <button className='msg' onClick={handleButtonClick}> <FaBriefcase></FaBriefcase> message</button>
-               <button className='appoinment' >appoinment </button>
+               <button className='msg' > <FaBriefcase></FaBriefcase> messages</button>
+               <button className='appoinment' >appoinments </button>
+               <button className='edit'>edit Profile </button>
             </div>
 
             <div className='aboutLawyer'>
@@ -184,42 +146,11 @@ const Profile = () => {
                     <div className='event'> hello</div>
                 </div>
             </div>
-            <Reviews></Reviews>
 
 
               {/* form pour envoyer un message  */}
 
-            {modalVisible && (
-            <div id="id01" className='modal' onClick={handleOutsideClick}>
             
-            <form  className='form'>
-                        <h2 class="text">write a message to <span>kha</span> </h2>
-                        <div class="input-container">
-                            <div class="grp">
-                                <div class="input-grp">
-                                    <FaUser></FaUser>
-                                    <input type="text" id="username" name="username" placeholder="" autocomplete="off"/>
-                                    <label for="username">your name</label>
-                                </div>
-                             </div>
-                            <div class="grp">
-                                <div class="input-grp">
-                                    <MdEmail></MdEmail>
-                                    <input type="email" id="email" name="email" placeholder="" autocomplete="off"/>
-                                     <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <textarea className='yourMsg' placeholder='write your message here '> </textarea>
-
-                            <button className='send'> send</button>
-                            <MdClose className='close' onClick={handleCloseModal}></MdClose>
-
-                           
-                        </div>
-                    
-                </form>
-            </div>
-             )}
 
 <div className='areas'>
             <h1>practis areas</h1>
@@ -280,4 +211,4 @@ const Profile = () => {
 }
 
  
-export default Profile;
+export default ProfileAvocat;

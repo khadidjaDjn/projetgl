@@ -11,6 +11,7 @@ import LoginSignup from './Components/Auth/LoginSignup';
 import HomePage from './Components/HomePage/HomePage'
 import Navbar from './Components/HomePage/Navbar';
 import Home from './Components/HomePage/Home';
+import ProfileAvocat from './Components/ProfileAvocat';
 
 
 
@@ -33,6 +34,7 @@ function App() {
           
         </Route>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/ProfileAvocat" element={<ProfileAvocat/>}/>
 
 
       </Routes>
