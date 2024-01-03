@@ -13,6 +13,11 @@ import Navbar from './Components/HomePage/Navbar';
 import Home from './Components/HomePage/Home';
 import ProfileAvocat from './Components/ProfileAvocat';
 
+import Search from './Components/HomePage/Search';
+
+import Appointment from './Components/Appointment';
+import Appointment2 from './Components/Appointment2';
+
 
 
 import Profile from './Components/HomePage/Profile';
@@ -32,9 +37,14 @@ function App() {
           <Route path="/Navbar" element={<Navbar/>}/>
           <Route path="/Home" element={<Home/>}/>
           
+          
         </Route>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/ProfileAvocat" element={<ProfileAvocat/>}/>
+        <Route path="/Appointment" element={<Appointment/>}/>
+        <Route path="/Appointment2" element={<Appointment2/>}/>
+
+        <Route path="/Search" element={<Search/>}/>
 
 
       </Routes>

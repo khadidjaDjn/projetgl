@@ -184,44 +184,8 @@ const Profile = () => {
                     <div className='event'> hello</div>
                 </div>
             </div>
-            <Reviews></Reviews>
 
-
-              {/* form pour envoyer un message  */}
-
-            {modalVisible && (
-            <div id="id01" className='modal' onClick={handleOutsideClick}>
-            
-            <form  className='form'>
-                        <h2 class="text">write a message to <span>kha</span> </h2>
-                        <div class="input-container">
-                            <div class="grp">
-                                <div class="input-grp">
-                                    <FaUser></FaUser>
-                                    <input type="text" id="username" name="username" placeholder="" autocomplete="off"/>
-                                    <label for="username">your name</label>
-                                </div>
-                             </div>
-                            <div class="grp">
-                                <div class="input-grp">
-                                    <MdEmail></MdEmail>
-                                    <input type="email" id="email" name="email" placeholder="" autocomplete="off"/>
-                                     <label for="email">Email</label>
-                                </div>
-                            </div>
-                            <textarea className='yourMsg' placeholder='write your message here '> </textarea>
-
-                            <button className='send'> send</button>
-                            <MdClose className='close' onClick={handleCloseModal}></MdClose>
-
-                           
-                        </div>
-                    
-                </form>
-            </div>
-             )}
-
-<div className='areas'>
+            <div className='areas'>
             <h1>practis areas</h1>
             <div className='practiceAreas'>
                 <div className='area-item'>
@@ -269,7 +233,45 @@ const Profile = () => {
                 </div>
             </div>
             
-        </div>
+            </div>
+            <Reviews></Reviews>
+
+
+              {/* form pour envoyer un message  */}
+
+            {modalVisible && (
+            <div id="id01" className='modal' onClick={handleOutsideClick}>
+            
+            <form  className='form'>
+                        <h2 class="text">write a message to <span>kha</span> </h2>
+                        <div class="input-container">
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <FaUser></FaUser>
+                                    <input type="text" id="username" name="username" placeholder="" autocomplete="off"/>
+                                    <label for="username">your name</label>
+                                </div>
+                             </div>
+                            <div class="grp">
+                                <div class="input-grp">
+                                    <MdEmail></MdEmail>
+                                    <input type="email" id="email" name="email" placeholder="" autocomplete="off"/>
+                                     <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <textarea className='yourMsg' placeholder='write your message here '> </textarea>
+
+                            <button className='send'> send</button>
+                            <MdClose className='close' onClick={handleCloseModal}></MdClose>
+
+                           
+                        </div>
+                    
+                </form>
+            </div>
+             )}
+
+
 
             
         </div>

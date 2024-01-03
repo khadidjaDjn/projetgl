@@ -10,6 +10,9 @@ import Navbar from './HomePage/Navbar';
 import Footer from './Footer';
 
 
+import ReviewsAvocat from './ReviewsAvocat';
+
+
 const ProfileAvocat = () => {
    
   
@@ -85,8 +88,8 @@ const ProfileAvocat = () => {
                     <a href='#'>www.kha.com</a>
 
                 </div>
-                </div>
-                <div className='schedule'>
+            </div>
+            <div className='schedule'>
                 <h1>schedule</h1>
                 <div className='week-time'>
                     <div className='heure'></div>
@@ -152,8 +155,8 @@ const ProfileAvocat = () => {
 
             
 
-<div className='areas'>
-            <h1>practis areas</h1>
+            <div className='areas'>
+            <h1>practise areas</h1>
             <div className='practiceAreas'>
                 <div className='area-item'>
                     <div className='title' >
@@ -200,7 +203,9 @@ const ProfileAvocat = () => {
                 </div>
             </div>
             
-        </div>
+            </div>
+
+            <ReviewsAvocat></ReviewsAvocat>
 
             
         </div>

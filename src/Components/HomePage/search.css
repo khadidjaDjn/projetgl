@@ -1,0 +1,173 @@
+.search .search-container {
+    padding-top:10vh ;
+    padding-bottom: 50px;
+}
+
+
+.search .search-container .container {
+    padding-top: 10vh;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.search .search-container .homeImg {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.homeImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.home {
+    height: 100%;
+    padding-left: 10%;
+}
+
+
+.container .home .chercher {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .home .chercher .search-bar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container .home .chercher .search-bar .search-lawyer,
+.container .home .chercher .search-bar .search-location{
+    background-color: white;
+    /* width: 300px; */
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container .home .chercher .search-bar .search-lawyer {
+    width: 310px;
+    height: 30px;
+    border-right: 2px solid rgba(51, 51, 51, 0.4);
+
+}
+.searchIcon,
+.mapIcon {
+    height: 16px ;
+    width: 16px;
+}
+
+.container .home .chercher .search-bar input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size:  0.8rem;
+    width: 100%;
+    margin-left: 5px;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder{
+    font-size:  0.7rem;
+}
+
+.searchBtn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f55d25;
+    color: white;
+}
+
+
+
+
+.search .search-container .box {
+    width: 80%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.card {
+    width: 270px ;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    
+
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 20%);
+}
+.card img {
+    width: 100%;
+    height: 50%;
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+    top: 0; /* position the image at the top left corner of the box */
+    left: 0;
+    overflow: hidden;
+}
+.card .evaluation {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card .evaluation .star {
+    color: rgba(252, 152, 53, 1);
+}
+
+.card .name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card .location {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.card .more {
+    font-size: 12px;
+    font-weight: 500; 
+    color: rgba(0, 140, 201, 1);
+    cursor: pointer;
+}
+.card .more:hover{
+    color: #00577d;
+    font-weight: 600;
+    transition: .5s ease;
+}
+

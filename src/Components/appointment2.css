@@ -1,0 +1,115 @@
+.appointment2 {
+    position: relative;
+}
+
+.appointment2 .appointment2-container {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.appointment2 .appointment2-container .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.appointment2 .appointment2-container .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 33%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.appointment2 .appointment2-container p{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.appointment2 .appointment2-container p span {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(74, 153, 211, 1);
+}
+
+.appointment2 .appointment2-container .kha {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.appointment2 .appointment2-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment2 .appointment2-container form div {
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+}
+
+.appointment2 .appointment2-container form div label {
+    font-size: 13px;
+    font-weight: 500;
+}
+.appointment2 .appointment2-container label  span {
+    color: red;
+}
+
+.appointment2 .appointment2-container form div input {
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+
+.appointment2 .appointment2-container .firstName label {
+    margin-right: 10px;
+}
+.appointment2 .appointment2-container .lastName label {
+    margin-right: 12px;
+}
+
+.appointment2 .appointment2-container .birth input {
+    margin-left: 12px;
+}
+
+.appointment2 .appointment2-container .adr label {
+    margin-right: 33px;
+}
+
+.appointment2 .appointment2-container .ccp label {
+    margin-right: 24px;
+}
+
+.appointment2 .appointment2-container .email label {
+    margin-right: 42px;
+}
+.appointment2 .appointment2-container .pwd label {
+    margin-right: 14px;
+}
+
+
+.appointment2 .appointment2-container .validate {
+    height: 30px;
+    width: 70px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(74, 153, 211, 1);
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+}
+
+
+

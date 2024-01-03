@@ -335,9 +335,10 @@
   .areas {
     position: relative;
     /* height: 70vh; */
-    width: 80%;
+    /* width: 80%; */
     margin-top: 50px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    margin-bottom: 50px;
 }
 
 
