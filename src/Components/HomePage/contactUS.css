@@ -1,0 +1,176 @@
+.contactUs .container {
+    padding-top: 10vh;
+    /* padding-bottom: 100px; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contactUs .container img {
+    width: 50%;
+}
+
+.contactUs .container form {
+    width: 40%;
+    /* margin-top: 5%; */
+    margin-left: 40px;
+    position: relative;
+}
+
+.contactUs .container form h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 15px 0;
+    color: rgba(74, 153, 211, 1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contactUs .container form p {
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+
+.contactUs .container form .grpC {
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 2px solid #c5c3c3;
+    width: 100%;
+    /* margin-left: 25%; */
+}
+                                        
+.contactUs .container form .grp::after, 
+.contactUs .container form .grp::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #361A1A;
+    transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+}
+                                        
+.contactUs .container form  .grp::after{
+    right: 50%;
+}
+.contactUs .container form .grp::before{
+    left: 50%;
+}
+.contactUs .container form .grp:focus-within::after,
+.contactUs .container form .grp:focus-within::before {
+    width: 50%;
+}
+.contactUs .container form .input-grp{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+                        
+.contactUs .container form .input-grp input  {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size:  0.8rem;
+    width: 100%;
+    margin-left: 5px;
+    font-weight: 600;
+}
+                                        
+.contactUs .container form .input-grp input:focus,
+.contactUs .container form .input-grp input:not(:placeholder-shown) {
+    outline: none;
+}
+                             
+.contactUs .container form .input-grp input:focus + label,
+.contactUs .container form .input-grp input:not(:placeholder-shown) + label {
+    top: -2px;
+    font-size: 13px;
+    color:  #361A1A;
+}
+                                        
+                                        
+.contactUs .container form .input-grp label {
+    position: absolute;
+    top: 40%;
+    left: 35px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    pointer-events: none;
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    bottom: 10px;
+}
+
+
+
+.contactUs .container form .who {
+    margin-bottom: 30px;
+}
+.contactUs .container form .who h5 {
+    margin-bottom: 10px;
+}
+
+.contactUs .container form .who label {
+    margin-right: 20px;
+        font-size: 15px;
+        display: flex;
+        gap: 7px;
+        align-items: stretch;
+        font-weight: 500;
+}
+
+
+
+.contactUs .container form .yourMsg {
+    width: 100%;
+    height: 90px;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+
+/* .yourMsg::placeholder {
+    font-size: 14px;
+} */
+
+.send {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 10%;
+    transform: translateX(-50%);
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 153, 211, 1);
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

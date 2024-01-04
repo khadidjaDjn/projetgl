@@ -13,6 +13,8 @@ import Navbar from './Components/HomePage/Navbar';
 import Home from './Components/HomePage/Home';
 import ProfileAvocat from './Components/ProfileAvocat';
 
+import ContactUS from './Components/HomePage/ContactUs';
+
 import Search from './Components/HomePage/Search';
 
 import Appointment from './Components/Appointment';
@@ -36,8 +38,6 @@ function App() {
         <Route path="/" exact element={<HomePage/>}>
           <Route path="/Navbar" element={<Navbar/>}/>
           <Route path="/Home" element={<Home/>}/>
-          
-          
         </Route>
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/ProfileAvocat" element={<ProfileAvocat/>}/>
@@ -45,6 +45,7 @@ function App() {
         <Route path="/Appointment2" element={<Appointment2/>}/>
 
         <Route path="/Search" element={<Search/>}/>
+        <Route path="/ContactUs" element={<ContactUS/>}/>
 
 
       </Routes>
