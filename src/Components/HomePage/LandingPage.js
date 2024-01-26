@@ -4,6 +4,8 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoSearch } from 'react-icons/io5';
 
 
+ 
+
 const LandingPage = () => {
     return (  
         <div className="container">

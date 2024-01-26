@@ -12,8 +12,12 @@ const TOP = () => {
                 <LawyerCard></LawyerCard>
                 <LawyerCard></LawyerCard>
                 <LawyerCard></LawyerCard>
-                
-                
+                <LawyerCard></LawyerCard>
+                <LawyerCard></LawyerCard>
+                <LawyerCard></LawyerCard>
+                <LawyerCard></LawyerCard>
+                <LawyerCard></LawyerCard>
+                <LawyerCard></LawyerCard>
             </div>
             <div className='left' > &lt;</div>
             <div className='right'>&gt;</div>

@@ -53,3 +53,35 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 768px) {
+    .topLaywers {
+        width: 360px;
+    }
+    .topLaywers h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;  
+        white-space: nowrap; 
+        scrollbar-width: thin;
+        height: 380Px;
+    }
+    
+    
+    
+    .left {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    
+
+  }
+
+

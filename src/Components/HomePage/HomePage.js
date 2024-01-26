@@ -1,10 +1,11 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 
-const HomePage = () => {
+   const HomePage = () => {
+
     return ( 
         <>
-           <Navbar/>
+           {/* <Navbar /> */}
            <Home/>
            
         </>
@@ -13,3 +14,4 @@ const HomePage = () => {
 }
  
 export default HomePage;
+
