@@ -36,7 +36,7 @@
 }
 
 .container .home p{
-    color: black;
+    color: white;
     position: absolute;
     top: 60%;
     font-size: 20px;
@@ -117,3 +117,95 @@ input::placeholder{
     color: white;
 }
 
+
+@media (max-width: 768px) {
+    .home {
+        padding-left: 5%;
+    }
+    
+.container h1 {
+    position: absolute;
+    top: 30%;
+    color: rgba(74, 153, 211, 1);
+    width: 553px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.container .home p {
+    color: white;
+    position: absolute;
+    top: 60%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .home p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f55d25;
+}
+
+.container .home .chercher {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: column; /* Adjusted for better responsiveness */
+    align-items: flex-start; /* Adjusted for better responsiveness */
+    gap: 15px;
+}
+
+.container .home .chercher .search-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Adjusted for better responsiveness */
+}
+
+.container .home .chercher .search-bar .search-lawyer,
+.container .home .chercher .search-bar .search-location {
+    background-color: white;
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 5px; /* Added for better responsiveness */
+}
+
+.container .home .chercher .search-bar .search-lawyer {
+    width: 100%; /* Adjusted for better responsiveness */
+    max-width: 310px; /* Added for better responsiveness */
+    border-right: none; /* Adjusted for better responsiveness */
+}
+
+.container .home .chercher .search-bar input {
+    
+    font-size: 0.8rem;
+    width: 100%;
+    margin-left: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 0.7rem;
+}
+
+.searchBtn {
+    width: 100%;
+    max-width: 100px; /* Added for better responsiveness */
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    
+}
+    
+  }

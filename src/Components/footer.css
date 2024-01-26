@@ -141,5 +141,46 @@
   
 
 
+  
+.footer .language-toggle .language{
+  height: 22px;
+  width: 70px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  color: white;
+  background-color: transparent !important;
+
+}
+.footer .language-toggle .language-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: max-content;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+        
+}
+
+.footer .language:hover .language-menu {
+  display: block;
+}
+
+.footer .language .language-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 10px !important;
+  color: white;
+}
+
+/* .footer .language-menu li:hover {
+  background-color: rgb(234, 234, 234);
+} */
+
+
+
+
 
 

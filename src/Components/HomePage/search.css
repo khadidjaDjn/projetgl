@@ -32,7 +32,7 @@
 }
 
 
-.container .home .chercher {
+.search-container .container .home .chercher {
     position: absolute;
     top: 50%;
     display: flex;
@@ -40,14 +40,14 @@
     gap: 15px;
 }
 
-.container .home .chercher .search-bar {
+.search-container .container .home .chercher .search-bar {
     display: flex;
     align-items: center;
     
 }
 
-.container .home .chercher .search-bar .search-lawyer,
-.container .home .chercher .search-bar .search-location{
+.search-container .container .home .chercher .search-bar .search-lawyer,
+.search-container .container .home .chercher .search-bar .search-location{
     background-color: white;
     /* width: 300px; */
     border-radius: 2px;
@@ -57,7 +57,7 @@
     align-items: center;
     gap: 5px;
 }
-.container .home .chercher .search-bar .search-lawyer {
+.search-container .container .home .chercher .search-bar .search-lawyer {
     width: 310px;
     height: 30px;
     border-right: 2px solid rgba(51, 51, 51, 0.4);

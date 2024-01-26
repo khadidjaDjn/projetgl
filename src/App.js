@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 import './index.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -23,6 +24,9 @@ import Appointment2 from './Components/Appointment2';
 
 
 import Profile from './Components/HomePage/Profile';
+
+
+
 
 function App() {
   return (
@@ -49,6 +53,7 @@ function App() {
 
 
       </Routes>
+      
     </Router>
       
   );
