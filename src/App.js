@@ -22,6 +22,9 @@ import Appointment from './Components/Appointment';
 import Appointment2 from './Components/Appointment2';
 
 
+import Messages from './Components/Messages';
+
+
 
 import Profile from './Components/HomePage/Profile';
 
@@ -47,6 +50,7 @@ function App() {
         <Route path="/ProfileAvocat" element={<ProfileAvocat/>}/>
         <Route path="/Appointment" element={<Appointment/>}/>
         <Route path="/Appointment2" element={<Appointment2/>}/>
+        <Route path="/Messages" element={<Messages/>}/>
 
         <Route path="/Search" element={<Search/>}/>
         <Route path="/ContactUs" element={<ContactUS/>}/>

@@ -68,7 +68,7 @@
         flex-direction: row;
         overflow-x: auto;  
         white-space: nowrap; 
-        scrollbar-width: thin;
+        /* scrollbar-width: thin; */
         height: 380Px;
     }
     

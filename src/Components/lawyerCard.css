@@ -90,75 +90,55 @@
 
     
 
+    /* width: 171px;
+        height: 280px; */
+
+@media (min-width: 768px) {
+            .lawyer-card{
+                width: 270px ;
+                height: 300px;
+                
+            
+            }
+            
+            .card {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .card img {
+                height: 50%;
+                overflow: hidden;
+                
+            }
+            .allDomains {
+       
+                bottom: -48px;
+               
+            
+            }
+
+        }
+
 @media (max-width: 768px) {
     .lawyer-card{
-        /* width: 171px;
-        height: 280px; */
+        
         flex: 0 0 auto;  
         width: 200px;  
         margin-right: 10px; 
     }
     
     .card {
-        width: 100%;
-        height: 280px;
+        width: 200px !important;
+        height: 280px !important;
         
     
     }
-
-    
     .card img {
         height: 40%;
     }
-    .card .evaluation {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-    
-    .card .evaluation .star {
-        color: rgba(252, 152, 53, 1);
-    }
-    
-    .card .name {
-        font-size: 15px;
-        font-weight: 600;
-    }
-    
-    .card p {
-        font-size: 12px;
-        font-weight: 500;
-    }
-    
-    .card .location {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-    .card .more {
-        font-size: 12px;
-        font-weight: 500; 
-        color: rgba(0, 140, 201, 1);
-        cursor: pointer;
-    }
-    .card .more:hover{
-        color: #00577d;
-        font-weight: 600;
-        transition: .5s ease;
-    }
     .allDomains {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: -48px;
-        background-color: white;
-        height: 30px;
-        border: 1px solid rgba(0, 140, 201, 1);
-        color: rgba(0, 140, 201, 1);
-        transition: box-shadow 0.3s ease-in-out;
-        border-radius: 2px;
-    
-    
+        bottom: -30px;
     }
 
 

@@ -180,6 +180,21 @@
 } */
 
 
+@media (max-width: 768px) {
+  .footer{
+    width: 420px;
+    padding: 0px 20px;
+    height: 55vh;
+}
+.footer .container {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 27px;
+  gap: 31px;
+}
+}
+
 
 
 

@@ -262,77 +262,94 @@ a:focus {
 
 /* responsive  */
 
-/* @media screen and (max-width: 768px){
-    .menu-icon {
-        display: block;
+
+  
+  @media (min-width: 768px) {
+    .nav .menu-icon {
+        display: none;
     }
-    .nav-menu {
-        position: fixed;
-        top: 10vh;
-        right: 0;
-        width: 50%;
-        height: 93vh;
-        flex-direction: column;
-        background-color: rgba(27, 36, 79, 1);
-        transform: translateX(100%);
-        
-
-    }
-    .nav-item a {
-        color: #fff;
-    }
-    .dropdown-item a {
-        color: rgba(27, 36, 79, 1);
-
-    }
-
-.nav-active {
-    transform: translateX(0);
-} */
-
-/* } */
-
-
-@media (max-width: 768px) {
+  }
+  @media (max-width: 768px) {
     .nav {
-      flex-direction: column; 
-      padding-right: 20px; 
-      height: 100vh;
+      flex-direction: column;
+      padding-right: 20px;
+      height: 10vh;
       gap: 20px;
       justify-content: flex-start;
+      transition: 0.2s ease-in-out;
+    }
+  
+    .nav-active {
+      height: 100vh;
+    }
+  
+    .nav .logo {
+        /* margin-bottom: 20px; */
+        position: absolute;
+        left: 20px;
+    }
+    .nav-active .logo {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
   
     .nav .search {
-      width: 100%; 
+      display: none; /* Hide search in mobile view */
     }
   
     .nav .nav-menu {
-      justify-content: flex-end; 
+      display: none; /* Hide nav menu items initially */
+      justify-content: flex-end;
       flex-direction: column;
       gap: 9px;
       align-items: normal;
     }
   
     .nav .nav-menu .nav-item {
-      margin-top: 10px; 
+      margin-top: 10px;
     }
   
     .nav .nav-menu .nav-item div::before {
-      display: none; 
+      display: none;
     }
   
     .dropdown-list {
-      position: static; 
-      box-shadow: none; 
-      display: none; 
+      position: static;
+      box-shadow: none;
+      display: none;
     }
   
     .nav-menu li:hover .dropdown-list {
-      display: block; 
+      display: block;
+    }
+     
+    .nav .menu-icon {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  
+    .nav-active .menu-icon {
+      display: none;
+    }
+  
+    .menu-icon-active {
+      display: none;
+    }
+  
+    .nav-active .nav-menu {
+      display: flex; /* Show nav menu items when nav-active class is present */
+    }
+    .nav .language-toggle {
+        display: none;
+    }
+    .nav-active .language-toggle {
+        display: block;
     }
   }
-
-
 
 
 

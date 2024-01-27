@@ -9,9 +9,14 @@ import { MdEmail, MdClose } from 'react-icons/md';
 
 
 
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
+
 import Reviews from '../Reviews';
 import Navbar from './Navbar';
 import Footer from '../Footer';
+
+import 'leaflet/dist/leaflet.css';
 
 const Profile = () => {
     const [modalVisible, setModalVisible] = useState(false);
@@ -105,7 +110,16 @@ const Profile = () => {
                      <p>8501 W Higgins Rd Ste 420
                         Chicago, IL, 60631-2811</p>
                 </div>
-                <img src='./adresse.webp'></img>
+                
+                <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: '320px', width: '70%', marginTop: '20px' }} >
+                    <TileLayer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        />
+                    <Marker position={[51.505, -0.09]}>
+                    <Popup>A sample marker located at 51.505, -0.09.</Popup>
+                    </Marker>
+                </MapContainer>
             </div> 
 
             <div className='contact'>

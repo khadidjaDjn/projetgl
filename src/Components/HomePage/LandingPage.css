@@ -118,6 +118,53 @@ input::placeholder{
 }
 
 
+@media (min-width: 768px) {
+    .homeImg {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    .homeImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .home {
+        padding-left: 10%;
+    }
+    .container h1 {
+        top: 30%;
+        width: 553px;
+        font-size: 46px;
+    }
+    
+    .container .home p{
+        top: 60%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    
+    .container .home .chercher {
+        top: 70%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .container .home .chercher .search-bar {
+        display: flex;
+        align-items: center;
+        
+    }   
+    
+    
+    
+  }
 
 @media (max-width: 768px) {
     .home {
@@ -180,8 +227,8 @@ input::placeholder {
 }
 
 .searchBtn {
-    width: 65px;
-    height: 26px;
+    width: 65px !important;
+    height: 26px !important;
     border: none;
     border-radius: 2px;
     font-size: 11px;

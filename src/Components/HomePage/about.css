@@ -67,3 +67,22 @@
         transform: translateY(-110px); /* Adjust the vertical distance as needed */
     }
 }
+
+/* responsive */
+
+
+@media (max-width: 768px) {
+    .about {
+        width: 420px;
+        padding: 13px 17px;
+        height: 34vh;
+    }
+    .about .content h1 {
+        font-size: 20px;
+    }
+    .about .content p {
+        font-size: 10px;
+        line-height: 1.4;
+        font-weight: 600;
+    }
+}

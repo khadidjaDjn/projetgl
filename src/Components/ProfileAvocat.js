@@ -2,6 +2,9 @@
 import './profileAvocat.css'
 
 
+
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
 // import { useState } from 'react';
 import {FaPhone , FaStar , FaBriefcase , FaMapMarked , FaFacebook,FaUser, FaGlobe , FaBalanceScale,FaBuilding, FaChartBar, FaCannabis, FaGavel} from 'react-icons/fa';
 // import { MdEmail, MdClose } from 'react-icons/md';
@@ -11,6 +14,9 @@ import Footer from './Footer';
 
 
 import ReviewsAvocat from './ReviewsAvocat';
+
+
+import 'leaflet/dist/leaflet.css';
 
 
 const ProfileAvocat = () => {
@@ -70,7 +76,15 @@ const ProfileAvocat = () => {
                      <p>8501 W Higgins Rd Ste 420
                         Chicago, IL, 60631-2811</p>
                 </div>
-                <img src='./adresse.webp'></img>
+                <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: '320px', width: '70%', marginTop: '20px' }} >
+                    <TileLayer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        />
+                    <Marker position={[51.505, -0.09]}>
+                    <Popup>A sample marker located at 51.505, -0.09.</Popup>
+                    </Marker>
+                </MapContainer>
             </div> 
 
             <div className='contact'>

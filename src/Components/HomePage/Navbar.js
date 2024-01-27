@@ -6,7 +6,8 @@ import { FaRegEnvelope } from 'react-icons/fa';
 
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 // import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
-import { faCircleUser, faHeart , faGear, faArrowUpRightFromSquare, faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
+import { faCircleUser, faHeart , faGear, faArrowUpRightFromSquare, faBars} from '@fortawesome/free-solid-svg-icons';
+import { FaTimes } from 'react-icons/fa';
 
 
 import { useState } from 'react';
@@ -156,15 +157,7 @@ const Navbar = () => {
                     </ul>
                 </li>
             </ul>
-            <FontAwesomeIcon icon={faBars} className={`menu-icon ${active ? 'menu-icon-active' : ''}`} onClick={toggleNavbar}></FontAwesomeIcon>
-
-{active && (
-  <div className="close-button" onClick={closeNavbar}>
-    <FontAwesomeIcon icon={faTimes} />
-  </div>
-)}
-
-            
+      
         <div className="language-toggle"  >
             <button className='language'>
                 {language === 'en' ? 'English' : language === 'ar' ? 'العربية' : 'Français'}
@@ -176,8 +169,12 @@ const Navbar = () => {
             </button>
              
         </div>
-        <faBars className={`menu-icon ${active ? 'menu-icon-active' : ''}`} onClick={toggleNavbar} ></faBars>
+        {/* <faBars className={`menu-icon ${active ? 'menu-icon-active' : ''}`} onClick={toggleNavbar} ></faBars> */}
         
+        <FontAwesomeIcon icon={faBars} className={`menu-icon ${active ? 'menu-icon-active' : ''}`} onClick={toggleNavbar}></FontAwesomeIcon>
+        {active && (
+    <FaTimes onClick={closeNavbar} />
+)}
         </nav>
      ); 
 }

@@ -5,7 +5,7 @@ import Home from "./Home";
 
     return ( 
         <>
-           {/* <Navbar /> */}
+           <Navbar />
            <Home/>
            
         </>
