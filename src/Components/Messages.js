@@ -1,6 +1,7 @@
 import './messages.css'
 
 import Navbar from './HomePage/Navbar';
+import Footer from './Footer';
 
 
 const Messages = () => {
@@ -41,6 +42,7 @@ const Messages = () => {
             </div>
             
         </div>
+        <Footer></Footer>
         </div>
      );
 }

@@ -28,6 +28,8 @@ import Messages from './Components/Messages';
 
 import Profile from './Components/HomePage/Profile';
 
+import Chat from './Components/Chat';
+
 
 
 
@@ -54,6 +56,7 @@ function App() {
 
         <Route path="/Search" element={<Search/>}/>
         <Route path="/ContactUs" element={<ContactUS/>}/>
+        <Route path="/Chat" element={<Chat/>}/>
 
 
       </Routes>
