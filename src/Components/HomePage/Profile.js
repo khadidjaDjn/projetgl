@@ -268,7 +268,7 @@ const Profile = () => {
                              </div>
                             <div class="grp">
                                 <div class="input-grp">
-                                    <MdEmail></MdEmail>
+                                    <MdEmail/>
                                     <input type="email" id="email" name="email" placeholder="" autocomplete="off"/>
                                      <label for="email">Email</label>
                                 </div>

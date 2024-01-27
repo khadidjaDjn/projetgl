@@ -27,6 +27,8 @@ import Messages from './Components/Messages';
 
 
 import Profile from './Components/HomePage/Profile';
+import Userprofile from './Components/UserProfile/Userprofile';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 
 
@@ -47,6 +49,8 @@ function App() {
           <Route path="/Home" element={<Home/>}/>
         </Route>
         <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/UserProfile" element={<Userprofile/>}/>
+        <Route path="/DashBoard" element={<Dashboard/>}/>
         <Route path="/ProfileAvocat" element={<ProfileAvocat/>}/>
         <Route path="/Appointment" element={<Appointment/>}/>
         <Route path="/Appointment2" element={<Appointment2/>}/>
