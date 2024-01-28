@@ -28,9 +28,10 @@ import Messages from './Components/Messages';
 
 import Profile from './Components/HomePage/Profile';
 import Userprofile from './Components/UserProfile/Userprofile';
+// import Dashboard from './Components/Dashboard/Dashboard';
 import Dashboard from './Components/Dashboard/Dashboard';
 
-import Chat from './Components/Chat';
+// import Chat from './Components/Chat';
 
 
 
@@ -60,7 +61,7 @@ function App() {
 
         <Route path="/Search" element={<Search/>}/>
         <Route path="/ContactUs" element={<ContactUS/>}/>
-        <Route path="/Chat" element={<Chat/>}/>
+        {/* <Route path="/Chat" element={<Chat/>}/> */}
 
 
       </Routes>

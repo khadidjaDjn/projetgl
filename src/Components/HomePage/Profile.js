@@ -16,6 +16,8 @@ import Reviews from '../Reviews';
 import Navbar from './Navbar';
 import Footer from '../Footer';
 
+import { Link } from 'react-router-dom';
+
 import 'leaflet/dist/leaflet.css';
 
 const Profile = () => {
@@ -92,7 +94,7 @@ const Profile = () => {
 
             <div className='buttons'> 
                <button className='msg' onClick={handleButtonClick}> <FaBriefcase></FaBriefcase> message</button>
-               <button className='appoinment' >appoinment </button>
+               <Link to='/Appointment'><button className='appoinment' >appoinment </button></Link>
             </div>
 
             <div className='aboutLawyer'>

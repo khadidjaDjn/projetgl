@@ -19,7 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    width: 100%;
+    width: 100;
     background-color: rgba(245, 244, 244, 1);
     padding: 0 20px;
     padding-right: 70px;
@@ -28,6 +28,7 @@ body {
     position: relative ;
     margin-top:0 ;
     transition: height 0.3s ease; 
+    z-index: 100;
 }
 .nav-active {
     height: 100vh; /* Set the full height when active */
