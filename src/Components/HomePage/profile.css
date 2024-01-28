@@ -1,0 +1,383 @@
+
+.Profile-container {
+    position: relative;
+    margin: 0;
+}
+
+.profile {
+    position: relative;
+    padding-top: 90px;
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+}
+
+    /* ------------profileCard ------------ */
+
+.profile .profileCard {
+   
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+.profile .profileCard img {
+    width: 125px;
+    height: 155px;
+    border: 2px solid rgba(74, 153, 211, 1) ;
+}
+.profile .profileCard .infos .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.profile .profileCard .infos .domain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+.profile .profileCard .infos .domain p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.profile .profileCard .infos .domain .brief {
+    color: rgba(74, 153, 211, 1);
+}
+
+.profile .profileCard .infos .domain p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.profile .profileCard .infos .rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+
+.profile .profileCard .infos .rating  .star {
+    color: rgba(252, 152, 53, 1);
+}
+
+.profile .profileCard .infos .nbr {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.profile .profileCard .infos .nbr .phone {
+    color: rgba(74, 153, 211, 1);
+}
+
+.profile .profileCard .infos .nbr p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+/*  ------------buttons ------------ */
+
+.profile .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .buttons .msg {
+    color: white;
+    background-color: rgba(74, 153, 211, 1);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    width: 125px;
+    height: 27px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.profile .buttons .appoinment {
+    color: rgba(74, 153, 211, 1);
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(74, 153, 211, 1);
+    width: 125px;
+    height: 27px;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+
+.profile .aboutLawyer {
+    margin-top: 45px;
+    margin-bottom: 30px;
+
+}
+.profile .aboutLawyer h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.profile .aboutLawyer h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 9%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+.profile .aboutLawyer p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+
+/* -------languages------- */
+.profile .languages ,
+.profile .adr , 
+.profile .contact {
+    margin-bottom: 30px;
+}
+.profile .languages h1,
+.profile .adr h1 ,
+.profile .contact h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+.profile .languages h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 28%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.profile .languages  .spoken {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile .adr h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.profile .adr .adress{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 240px;
+}
+
+.profile .adr .adress .mapIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.profile .adr .adress p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+                                            /* contact  */
+
+.profile .contact h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 17%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+
+
+.profile .contact .phoneNbr,
+.profile .contact .facebook,
+.profile .contact .site{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.profile .contact .facebook,
+.profile .contact .site{
+    text-decoration: underline;
+}
+
+
+.profile .contact  .phoneNbr p,
+.profile .contact .facebook a,
+.profile .contact .site  a{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+.profile .contact  .phoneNbr .phone,
+.profile .contact .facebook .fbIcon,
+.profile .contact .site .siteIcon  {
+    color: rgba(74, 153, 211, 1);
+}
+
+
+
+
+
+
+
+
+
+/* WeeklySchedule.css */
+.schedule {
+    margin-bottom: 30px;
+}
+.schedule h1,
+.areas h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.schedule h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 17%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+
+.week-time {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 2fr); /* 1 column for time, 5 columns for days */
+    grid-template-rows: repeat(7, 1fr); /* 7 rows for each day of the week */
+    border: 1px solid #c2c0c0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .heure,
+  .days,
+  .event {
+    border: 0.2px solid #ebe6e6;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .heure {
+    font-size: 9px;
+    font-weight: 600;
+  }
+  
+  .days {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .event {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+
+
+  /* practice areas  */
+
+  .areas {
+    position: relative;
+    /* height: 70vh; */
+    width: 80%;
+    margin-top: 50px;
+    /* margin-left: 10%; */
+}
+
+
+.areas h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 24.5%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+.areas .practiceAreas {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 30px; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.areas .practiceAreas .area-item{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 30%;
+}
+
+
+
+.areas .practiceAreas .area-item .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.areas .practiceAreas .area-item .title .area-icon {
+    font-size: 30px;
+    color: rgba(74, 153, 211, 1);;
+}
+.areas .practiceAreas .area-item .title h4{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+.areas .practiceAreas .area-item h4::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: rgba(74, 153, 211, 1);
+}
+

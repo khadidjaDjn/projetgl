@@ -1,0 +1,243 @@
+
+
+.container {
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100;
+    position: relative;
+    
+}
+
+.homeImg {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    width: 420px;
+    /* object-fit: cover; */
+}
+.homeImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.home {
+    height: 100%;
+    padding-left: 10%;
+}
+.container h1 {
+    position: absolute;
+    top: 30%;
+    color: rgba(74, 153, 211, 1);
+    width: 553px;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.container .home p{
+    color: white;
+    position: absolute;
+    top: 60%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.container .home p::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f55d25;
+}
+
+.container .home .chercher {
+    position: absolute;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .home .chercher .search-bar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.container .home .chercher .search-bar .search-lawyer,
+.container .home .chercher .search-bar .search-location{
+    background-color: white;
+    /* width: 300px; */
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container .home .chercher .search-bar .search-lawyer {
+    width: 310px;
+    height: 30px;
+    border-right: 2px solid rgba(51, 51, 51, 0.4);
+
+}
+.searchIcon,
+.mapIcon {
+    height: 16px ;
+    width: 16px;
+}
+
+.container .home .chercher .search-bar input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size:  0.8rem;
+    width: 100%;
+    margin-left: 5px;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder{
+    font-size:  0.7rem;
+}
+
+.searchBtn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f55d25;
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .homeImg {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    .homeImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .home {
+        padding-left: 10%;
+    }
+    .container h1 {
+        top: 30%;
+        width: 553px;
+        font-size: 46px;
+    }
+    
+    .container .home p{
+        top: 60%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    
+    .container .home .chercher {
+        top: 70%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .container .home .chercher .search-bar {
+        display: flex;
+        align-items: center;
+        
+    }   
+    
+    .searchBtn{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    
+  }
+
+@media (max-width: 768px) {
+    .home {
+        padding-left: 5%;
+    }
+    
+.container h1 {
+    top: 30%;
+    width: 190px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.container .home p {
+    top: 46%;
+    font-size: 13px;
+}
+
+
+
+.container .home .chercher {
+    top: 52%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    left: 30px;
+}
+
+.container .home .chercher .search-bar {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .home .chercher .search-bar .search-lawyer,
+.container .home .chercher .search-bar .search-location {
+    
+    height: 25px;
+}
+
+.container .home .chercher .search-bar .search-lawyer {
+    width: 100%; /* Adjusted for better responsiveness */
+    max-width: 310px; /* Added for better responsiveness */
+    border-right: none; /* Adjusted for better responsiveness */
+}
+
+.container .home .chercher .search-bar input {
+    
+    font-size: 0.6rem;
+    width: 100%;
+    margin-left: 5px;
+}
+
+
+
+input::placeholder {
+    font-size: 0.5rem;
+}
+
+.searchBtn {
+    width: 60px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+    
+}
+    
+  }
+
+

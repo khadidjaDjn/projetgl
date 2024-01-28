@@ -1,0 +1,148 @@
+.lawyer-card{
+    width: 270px ;
+    height: 300px;
+    position: relative;
+    
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.3s ease-in-out;
+    
+
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px 1px rgba(0, 0, 0, 20%);
+}
+.card img {
+    width: 100%;
+    height: 50%;
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+    top: 0; /* position the image at the top left corner of the box */
+    left: 0;
+    overflow: hidden;
+}
+.card .evaluation {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card .evaluation .star {
+    color: rgba(252, 152, 53, 1);
+}
+
+.card .name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card .location {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.card .more {
+    font-size: 12px;
+    font-weight: 500; 
+    color: rgba(0, 140, 201, 1);
+    cursor: pointer;
+}
+.card .more:hover{
+    color: #00577d;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.allDomains {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -48px;
+    background-color: white;
+    height: 30px;
+    border: 1px solid rgba(0, 140, 201, 1);
+    color: rgba(0, 140, 201, 1);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 2px;
+
+
+}
+
+.allDomains:hover {
+    box-shadow: inset 0 0 0 1px #00577d;
+    color: #00577d;
+    /* border: 2px solid rgba(27, 36, 79, 1); */
+    }
+
+    
+
+    /* width: 171px;
+        height: 280px; */
+
+@media (min-width: 768px) {
+            .lawyer-card{
+                width: 270px ;
+                height: 300px;
+                
+            
+            }
+            
+            .card {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .card img {
+                height: 50%;
+                overflow: hidden;
+                
+            }
+            .allDomains {
+       
+                bottom: -48px;
+               
+            
+            }
+
+        }
+
+@media (max-width: 768px) {
+    .lawyer-card{
+        
+        flex: 0 0 auto;  
+        width: 200px;  
+        margin-right: 10px; 
+    }
+    
+    .card {
+        width: 200px !important;
+        height: 280px !important;
+        
+    
+    }
+    .card img {
+        height: 40%;
+    }
+    .allDomains {
+        bottom: -30px;
+    }
+
+
+}
+   
+
+

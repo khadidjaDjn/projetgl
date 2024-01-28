@@ -1,0 +1,46 @@
+.mssages {
+    padding-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.mssages h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container {
+    overflow-x: auto;
+  }
+  
+  .message-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .message-table th, .message-table td {
+    border-bottom: 1.5px solid #a3bdfc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .message-table th {
+    /* background-color: #f2f2f2; */
+    border-bottom: 1.5px solid #a3bdfc;
+    font-size: 14px;
+  }
+  .message-table td {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .message-table .name {
+    width: 170px;
+  }
+  .message-table .email {
+    width: 200px;
+  }

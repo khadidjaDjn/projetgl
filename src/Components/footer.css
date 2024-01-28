@@ -1,0 +1,275 @@
+.footer{
+    width: 100;
+    height: 58vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 1);
+    padding: 0 60px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+.footer .container .ourSite {
+    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer .container .ourSite .logo {
+    width: 200px;
+    height: 80px;
+}
+
+.footer .container .ourSite .description{
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    width: 200px;
+}
+.footer .container .links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 25px;
+    width: 110px;
+}
+.footer .container .links h4 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.footer .container .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+}
+
+
+.footer .container .links a:hover,
+.footer .container .links a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+
+.links a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    /* transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; */
+  }
+  
+  /* .links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+
+
+  .footer .container  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    color: white;
+    align-items: flex-start;
+
+  }
+  .footer .container  .contact h4 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .footer .container  .contact div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .footer .socialMedia  {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    
+  }
+
+  .footer .socialMedia h4 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .footer .socialMedia .soc {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    
+  }
+  
+  .socialMedia .fb {
+    color: #1877f2; /* Facebook blue */
+  }
+  
+  .socialMedia .insta {
+    color: #c13584; /* Instagram pink */
+  }
+  
+  .socialMedia .twitter {
+    color: #1da1f2; /* Twitter blue */
+  }
+  
+  .socialMedia .linkedIn {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+
+
+  
+.footer .language-toggle .language{
+  height: 22px;
+  width: 70px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  color: white;
+  background-color: transparent !important;
+
+
+}
+.footer .language-toggle .language-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: max-content;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 200;
+        
+}
+
+.footer .language:hover .language-menu {
+  display: block;
+}
+
+.footer .language .language-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 10px !important;
+  color: white;
+}
+
+/* .footer .language-menu li:hover {
+  background-color: rgb(234, 234, 234);
+} */
+
+@media (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0;
+    gap: 200px;
+    padding-bottom: 84px;
+}
+.footer .container .ourSite {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 30px;
+}
+.footer .container .links {
+  width: 110px;
+}
+.footer .container .links h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer .container .links a {
+  font-size: 11px;
+  
+}
+.footer .container  .contact {
+  gap: 11px;
+
+}
+.footer .container  .contact h4,
+.footer .socialMedia h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.footer .container  .contact div {
+  
+  font-size: 13px;
+  font-weight: 400;
+}
+}
+
+@media (max-width: 768px) {
+  .footer{
+    width: 100;
+    padding: 0px 20px;
+    height: 65vh;
+}
+.footer .container {
+  /* align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; */
+  /* padding: 27px; */
+  gap: 10px;
+  width: 100%;
+}
+.footer .container .ourSite {
+  position: absolute;
+    top: 10px;
+}
+.footer .container .links {
+  width: 110px;
+}
+.footer .container .links h4,
+.footer .socialMedia h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer .container .links a {
+  font-size: 11px;
+}
+.footer .container  .contact {
+  gap: 8px;
+
+}
+.footer .container  .contact h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer .container  .contact div {
+  
+  font-size: 11px;
+  font-weight: 400;
+}
+}
+
+
+
+
+

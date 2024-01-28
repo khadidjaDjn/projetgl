@@ -1,0 +1,124 @@
+
+/* la forme message  */
+
+
+
+/* The Modal (background) */
+.modal2 {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+
+}
+
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+.form2 {
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    /*border: solid 1px;
+    */-webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+    position: absolute;
+    background-color: white;
+    padding-top: 10px;
+    animation: animatezoom 1s ease ;
+        -webkit-animation: animatezoom 1s ease ;
+        padding: 30px 20px;
+        text-align: center;
+                                        }
+.form2 h2 {
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 15px 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+.modal2 .form2 .ratingForm {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+    margin-top: 9px;
+    align-items: center;
+    justify-content: center;
+}
+.modal2 .form2 .ratingForm input[type=radio] {
+    display: none;
+}
+
+.modal2 .form2 .ratingForm p {
+    font-size: 13px;
+    margin-left: 20px;
+    font-weight: 400;
+    color: rgb(156 156 156);
+}
+
+
+  
+
+.yourMsg {
+    width: 90%;
+    height: 155px;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+
+/* .yourMsg::placeholder {
+    font-size: 14px;
+} */
+
+.send {
+    position: absolute;
+    bottom: 10px;
+    right: 40%;
+    width: 10%;
+    transform: translateX(-50%);
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 153, 211, 1);
+    border: none;
+    border-radius: 2px;
+}
+       
+.form2 .close {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    font-size: 18px;
+}
+            
+.form2 .close:hover{
+    color: rgba(74, 153, 211, 1);
+}
+                                     
+
+
+

@@ -1,0 +1,88 @@
+.about {
+    height: 50vh;
+    position: relative;
+    width: 100;
+    background-color: rgb(197 219 238 / 60%);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 120px;
+    /* box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2); */
+    box-shadow: 0px 4px 8px rgba(149, 157, 165, 0.2);
+    align-items: end;
+
+}
+
+.about .content {
+    width: 50%;
+    height: 100%;
+}
+
+.about .content h1 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+}
+
+.about .content p {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.about .content p span {
+    color: rgba(74, 153, 211, 1);
+    font-weight: 700;
+}
+
+
+
+
+
+
+.aboutImg {
+    /* width: 50%;
+    height: 100%; */
+    position: relative;
+}
+.aboutImg .hammer1{
+    object-fit: cover;
+    display: block;
+    width: 130px;
+    height: 100px;
+    animation: hammerAnimation 2s infinite;
+}
+.aboutImg .hammer2{
+    position: absolute;
+    bottom: 20px;
+    height: 118px;
+    width: 145px;
+      
+}
+@keyframes hammerAnimation {
+    0%, 100% {
+        transform: translateY(-24px);
+    }
+    50% {
+        transform: translateY(-110px); /* Adjust the vertical distance as needed */
+    }
+}
+
+/* responsive */
+
+
+@media (max-width: 768px) {
+    .about {
+        width: 100;
+        padding: 13px 17px;
+        height: 34vh;
+    }
+    .about .content h1 {
+        font-size: 20px;
+    }
+    .about .content p {
+        font-size: 9px;
+        line-height: 1.4;
+        font-weight: 600;
+    }
+}
